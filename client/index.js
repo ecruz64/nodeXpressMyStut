@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function (){
-fetch('https://localhost:443/getAll')
+fetch('http://localhost:443/getAll')
     .then(response=> response.json())
     .then(data=>loadHTMLTable(data['data']));
+    loadHTMLTable();
 });
 
 
